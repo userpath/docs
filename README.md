@@ -70,7 +70,7 @@ def genkey(pub, to)
 end
 ```
 
-Once you have this function/method in place, call it like so:
+Once you have this function/method in place, call it by placing the `pub` number in the `data-ctc-pub-number` attribute, the `to` number in the `data-ctc-to-number` attribute & the resulting hash in the `data-ctc-authkey` attribute like so:
 ```php
 <?php
 require('genkey.php');
