@@ -84,7 +84,7 @@ $company_num = "844-362-3596";
     (function() {
         var script = document.createElement('script');
         script.async = true;
-        script.src   = p+'//alpha.userpath.co/assets/js/click_to_call.min.js';
+        script.src   = p+'//assets.userpath.co/js/0d9f92bdd748d70dabfab3750f2139a2/click_to_call.min.js';
        
         var entry = document.getElementsByTagName('script')[0];
         entry.parentNode.insertBefore(script, entry);
