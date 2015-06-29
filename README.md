@@ -29,6 +29,10 @@ function genkey($pub, $to){
 ?>
 ```
 
+#### Python implementation
+- `pub` is the number you'd like to display when calling the user filling out the click to call form.
+- `to` is most often a phone number where someone from your company can be reached. It's really just the number where we expect a human to pick up that we can connect to the user that filled out the click to call form.
+- `secret_key` is the secret key we just talked about. You can find yours here: http://alpha.userpath.co/account/settings/profile/
 ```python
 import re
 import hashlib 
@@ -40,6 +44,10 @@ def genkey(pub, to):
     return hashlib.md5("{0}-{1}-{2}".format(to, secret_key, pub)).hexdigest()
 ```
 
+#### Ruby implementation
+- `pub` is the number you'd like to display when calling the user filling out the click to call form.
+- `to` is most often a phone number where someone from your company can be reached. It's really just the number where we expect a human to pick up that we can connect to the user that filled out the click to call form.
+- `secret_key` is the secret key we just talked about. You can find yours here: http://alpha.userpath.co/account/settings/profile/
 ```ruby
 require 'digest'
  
