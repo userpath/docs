@@ -22,6 +22,28 @@ function genkey($pub, $to){
 ?>
 ```
 
+```python
+import re
+import hashlib 
+
+def genkey(pub, to):
+	pub = "".join(re.findall(r'\d+', pub))
+        to = "".join(re.findall(r'\d+', to))
+        secret_key = 'Your Key Here'
+        return hashlib.md5("{0}-{1}-{2}".format(to, secret_key, pub)).hexdigest()
+```
+
+```ruby
+require 'digest'
+ 
+def genkey(pub, to)
+  pub.gsub!(/\D/, '')
+  to.gsub!(/\D/, '')
+  secret_key = 'Your Key Here'
+  Digest::MD5.hexdigest "#{to}-#{secret_key}-#{pub}"
+end
+```
+
 ### Using auto-detect
 ctc-num
 
