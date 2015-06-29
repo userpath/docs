@@ -34,10 +34,10 @@ import re
 import hashlib 
 
 def genkey(pub, to):
-	pub = "".join(re.findall(r'\d+', pub))
-        to = "".join(re.findall(r'\d+', to))
-        secret_key = 'Your Key Here'
-        return hashlib.md5("{0}-{1}-{2}".format(to, secret_key, pub)).hexdigest()
+    pub = "".join(re.findall(r'\d+', pub))
+    to = "".join(re.findall(r'\d+', to))
+    secret_key = 'Your Key Here'
+    return hashlib.md5("{0}-{1}-{2}".format(to, secret_key, pub)).hexdigest()
 ```
 
 ```ruby
