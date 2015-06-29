@@ -4,7 +4,18 @@ Our documentation - for the time being. If you have any questions, please don't 
 ## Click to Call Widget
 
 ### CSS
-You can over write our css for our widgets.
+You can over write our css for the Click to Call widget. The classes vary by layout.
+
+All layouts:
+- `.widgetctc-txt-field` is used on all text fields; name & phone number to be exact.
+- `.widgetctc-name-field` is used only on the name field.
+- `#widgetctc-phone-num-field` is used only on the name field.
+
+Auto-detect:
+
+Drop-in:
+
+Bottom-bar:
 
 ### Using dynamic phone numbers
 We allow you to use dynamic phone numbers on the front end if you don't want to import all of your phone numbers into UserPath's interface. We allow you do this using shared secrets & signing the options for your call with that secret. You can grab your secret in your account settings here: http://alpha.userpath.co/account/settings/profile/
