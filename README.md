@@ -4,7 +4,7 @@ Our documentation - for the time being. If you have any questions, please don't 
 ## Click to Call Widget
 
 ### CSS Selectors for overwriting styles
-You can over write our css for the Click to Call widget. The classes vary by layout.
+You can over write our css for the Click to Call widget. The classes vary by layout. Always remember that `:before` & `:after` selectors are your friends :)
 
 All layouts:
 - `.widgetctc-txt-field` is used on all text fields; name & phone number to be exact.
@@ -108,4 +108,14 @@ We allow you to turn anything into a clickable thing that pops up the click to c
 
 ## App Download Widget
 
-Something
+### CSS Selectors for overwriting styles
+You can over write our css for the App download widget. The classes vary by layout. Always remember that `:before` & `:after` selectors are your friends. :)
+
+All layouts:
+- `.widgetctc-txt-field` is used on all text fields; just phone number to be exact.
+- `.intl-tel-input` wraps the phone number field
+- `.widgetctc-btn` is used for the submit button
+
+Drop-in:
+- `.widgetsms_form_wrapper` is used to encapsulate the title and form
+- `#widgetsms_form h2` is used for form title
