@@ -104,7 +104,7 @@ $company_num = "844-362-3596";
 
 
 ### Using auto-detect
-ctc-num
+We allow you to turn anything into a clickable thing that pops up the click to call form; things like buttons, images, links, etc. If you use this feature, then auto-detect will not search the entire page for strings that look like phone numbers it will only look for elements with attribute `data-ctc-auto`. So add `data-ctc-auto="true"` to any item you'd like to trigger the click to call process. 
 
 ## App Download Widget
 
