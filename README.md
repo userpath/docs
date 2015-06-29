@@ -70,6 +70,30 @@ def genkey(pub, to)
 end
 ```
 
+Once you have this function/method in place, call it like so:
+```php
+<?php
+require('genkey.php');
+$company_num = "844-362-3596";
+?>
+<script data-ctc-widget="1" data-ctc-pub-number="<?= $company_num; ?>" data-ctc-to-number="<?= $company_num; ?>" data-ctc-authkey="<?= genkey($company_num, $company_num); ?>">
+    /*{literal}<![CDATA[*/
+    var WidgetCTC = window.WidgetCTC || {};
+    var p = window.location.protocol == 'https:' ? 'https:' : 'http:' ;
+ 
+    (function() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src   = p+'//alpha.userpath.co/assets/js/click_to_call.min.js';
+       
+        var entry = document.getElementsByTagName('script')[0];
+        entry.parentNode.insertBefore(script, entry);
+    })();
+    /*]]>{/literal}*/
+</script>
+```
+
+
 ### Using auto-detect
 ctc-num
 
