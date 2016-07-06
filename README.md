@@ -92,6 +92,8 @@ fdsfs
 2. Paste your UserPath code on every page or if using a template engine, just drop it in the master layout
 3. It should go right before the `</body>` end tag.
 
+__GIF Walkthrough:__ ![Plain HTML](./html-walkthrough.gif)
+
 ## App Download Plugin Installation
 
 If you're trying to use the `drop-in` layout so you can place the app download form where ever you  want on your page, then you must place the snippet provided to you in the HTML, like so:
