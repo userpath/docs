@@ -52,10 +52,13 @@ fdsfs
 
 ------
 
-1. Go to edit theme
-2. Click on edit HTML
-3. Scroll to bottom of code
-4. Paste in your code
+1. Go to the profile icon in the top right
+2. Click on the Tumblr you want to add the UserPath plugin to
+3. Click "edit appearance"
+4. Click "edit theme"
+5. At the top on the left click on the tiny "Edit HTML" link
+6. Scroll to bottom of code
+7. Paste in your code
 
 __REMEMBER:__ You must drop the URL of your tumblr blog into your allowed domains in the widget configuration.
 
