@@ -149,7 +149,9 @@ You would simply add the `script` tag to the bottom, like so:
 </head>
 <body>
 	... <!-- your code above this -->
-	<script type="text/javascript"></script>
+	<!-- begin UserPath embed code -->
+	<script type="text/javascript" src="//app.userpath.co/w/get/f4a1aedz66.js"></script>
+	<!-- end UserPath embed code -->
 </body>
 </html>
 ```
@@ -179,7 +181,9 @@ and finally, drop the `div`s in the appropriate sections (`header` and `download
 	<footer>
 		...
 	</footer>
-	<script type="text/javascript"></script>
+	<!-- begin UserPath embed code -->
+	<script type="text/javascript" src="//app.userpath.co/w/get/f4a1aedz66.js"></script>
+	<!-- end UserPath embed code -->
 </body>
 </html>
 ```
