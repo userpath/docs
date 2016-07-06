@@ -7,7 +7,7 @@ These instructions guide you through setup for our most common platforms as well
 
 Also, remember: You must drop the URL of your tumblr blog into your allowed domains in the widget configuration.
 
-![On Google Tag Manager](http://userpath.co/new-site/images/img21.png)
+### On Google Tag Manager
 
 ------
 1. Go to the container you'd like to add the plugin to
@@ -40,7 +40,15 @@ __GIF Walkthrough:__ ![On Tumblr](./tumblr-walkthrough.gif)
 ### On WordPress
 
 ------
-fdsfs
+1. Sign in to your WordPress installation
+2. On the left hand menu hover over "Appearance"
+3. Then click "Widgets"
+4. Make sure you have a "Text" widget available in your available widget area (most common is sidebar) or add one
+5. Enter "UserPath plugin" as the title
+6. Paste your UserPath code into the "Content" box
+7. Click the "save" button
+
+__GIF Walkthrough:__ ![On WordPress](./wordpress-walkthrough.gif)
 
 ### On Shopify
 
