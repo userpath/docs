@@ -6,7 +6,14 @@ Our documentation - for the time being. If you have any questions, please don't 
 ![On Google Tag Manager](http://userpath.co/new-site/images/img21.png)
 
 ------
-fdsfs
+1. Go to the container you'd like to add the plugin to
+2. Click "Add new tag"
+3. Click "Custom HTML Tag"
+4. Paste in your code
+5. Check the "Support document.write" option
+6. Click continue
+7. Select "All Pages"
+8. Click "Create Tag"
 
 ### On WordPress
 
