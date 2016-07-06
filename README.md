@@ -1,116 +1,159 @@
 # UserPath Documentation
 Our documentation - for the time being. If you have any questions, please don't hesitate to email support@userpath.co - we will get back to you as quickly as possible!
 
-## Click to Call Widget
+## Plugin Installation Instructions
 
-### CSS Selectors for overwriting styles
-You can over write our css for the Click to Call widget. The classes vary by layout. Always remember that `:before` & `:after` selectors are your friends :)
+![On Google Tag Manager](http://userpath.co/new-site/images/img21.png)
 
-All layouts:
-- `.widgetctc-txt-field` is used on all text fields; name & phone number to be exact.
-- `.widgetctc-name-field` is used only on the name field.
-- `#widgetctc-phone-num-field` is used only on the phone number field.
-- `.widgetctc-btn` is used for the submit button
+------
+fdsfs
 
-Auto-detect:
-- `.widget_ctc_auto_num` is used for the phone number button when that option is selected
-- `.widget-ctc-webui-popover-title` is used for the h3 title on the form in the popover
+### On WordPress
 
-Drop-in:
-- `.widgetctc_form` is used for the form container
-- `.widgetctc_form h2` is used for form title
+------
+fdsfs
 
-Bottom-bar:
-- `.widget_ctc_blurb` is used for the div containing the title and blurb
-- `.widget_ctc_blurb h3` is used for targeting the title of the blurb
-- `.widget_ctc_blurb p` is used for targeting the body of the blurb
-- `.widget_ctc_bar_form` is used for the form container
+### On Shopify
 
-### Using dynamic phone numbers
-We allow you to use dynamic phone numbers on the front end if you don't want to import all of your phone numbers into UserPath's interface. We allow you do this using shared secrets & signing the options for your call with that secret. You can grab your secret in your account settings here: http://alpha.userpath.co/account/settings/profile/
+------
+fdsfs
 
-Use your secret as the value of the `secret_key` variable.
+### On Magento
 
-The `pub` number shows up on caller id for the person that just requested a call while the `to` number is what we call when trying to connect the person that just requested a call to.
+------
+fdsfs
 
-#### PHP implementation
+### On BigCommerce
 
-```php
-<?php
-function clean_number($num){
-	return preg_replace("/[^0-9]/","", $num);
-}
+------
+fdsfs
 
-function genkey($pub, $to){
-	$pub = clean_number($pub);
-	$to = clean_number($to);
-	$secret_key = 'Your Key Here'; // do not share
-	return md5($to."-".$secret_key."-".$pub);
-}
-?>
+### On 3DCart
+
+------
+fdsfs
+
+### On PrestaShop
+
+------
+fdsfs
+
+### On Weebly
+
+------
+fdsfs
+
+### On SquareSpace
+
+------
+fdsfs
+
+### On Tumblr
+
+------
+
+1. Go to edit theme
+2. Click on edit HTML
+3. Scroll to bottom of code
+4. Paste in your code
+
+__REMEMBER:__ You must drop the URL of your tumblr blog into your allowed domains in the widget configuration.
+
+
+## App Download Plugin Installation
+
+If you're trying to use the `drop-in` layout so you can place the app download form where ever you  want on your page, then you must place the snippet provided to you in the HTML, like so:
+
+```html
+<script></script>
+<div class="userpath-plug-f4a1aedz66"></div>
 ```
 
-#### Python implementation
-```python
-import re
-import hashlib 
+If you'd like to place the form in more than one place on the same page, simply copy the line with the div tag and place it multiple times in your HTML where ever you would like it to appear. For instance, say you have a `header`, a `main section`, a `download section` and `footer`. Let's say you want to have your App Download widget in the `header` and the `download section` and this is your HTML:
 
-def genkey(pub, to):
-    pub = "".join(re.findall(r'\d+', pub))
-    to = "".join(re.findall(r'\d+', to))
-    secret_key = 'Your Key Here'
-    return hashlib.md5("{0}-{1}-{2}".format(to, secret_key, pub)).hexdigest()
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My App Homepage</title>
+</head>
+<body>
+	<header>
+		<button>Download for iOS</button>
+		<button>Download for Android</button>
+	</header>
+	<section id="main">
+		<ul>
+			<li>It's free</li>
+			<li>It's live streaming</li>
+			<li>It's social</li>
+			<li>It's local</li>
+			<li>It's viral</li>
+			<li>It's gamified</li>
+		</ul>
+	</section>
+	<section id="download">
+		<button>Download for iOS</button>
+		<button>Download for Android</button>
+	</section>
+	<footer>
+		<p>&copy; 2016 My App Homepage</p>
+		<a href="#">about</a>
+		<a href="#">contact</a>
+	</footer>
+</body>
+</html>
 ```
 
-#### Ruby implementation
-```ruby
-require 'digest'
- 
-def genkey(pub, to)
-  pub.gsub!(/\D/, '')
-  to.gsub!(/\D/, '')
-  secret_key = 'Your Key Here'
-  Digest::MD5.hexdigest "#{to}-#{secret_key}-#{pub}"
-end
+You would simply add the `script` tag to the bottom, like so:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My App Homepage</title>
+</head>
+<body>
+	... <!-- your code above this -->
+	<script type="text/javascript"></script>
+</body>
+</html>
 ```
 
-Once you have this function/method in place, call it by placing the `pub` number in the `data-ctc-pub-number` attribute, the `to` number in the `data-ctc-to-number` attribute & the resulting hash in the `data-ctc-authkey` attribute like so:
-```php
-<?php
-require('genkey.php');
-$company_num = "844-362-3596";
-?>
-<script data-ctc-widget="1" data-ctc-pub-number="<?= $company_num; ?>" data-ctc-to-number="<?= $company_num; ?>" data-ctc-authkey="<?= genkey($company_num, $company_num); ?>">
-    /*{literal}<![CDATA[*/
-    var WidgetCTC = window.WidgetCTC || {};
-    var p = window.location.protocol == 'https:' ? 'https:' : 'http:' ;
- 
-    (function() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src   = p+'//assets.userpath.co/js/0d9f92bdd748d70dabfab3750f2139a2/click_to_call.min.js';
-       
-        var entry = document.getElementsByTagName('script')[0];
-        entry.parentNode.insertBefore(script, entry);
-    })();
-    /*]]>{/literal}*/
-</script>
-```
+and finally, drop the `div`s in the appropriate sections (`header` and `download`) like this:
 
-
-### Using auto-detect
-We allow you to turn anything into a clickable thing that pops up the click to call form; things like buttons, images, links, etc. If you use this feature, then auto-detect will not search the entire page for strings that look like phone numbers it will only look for elements with attribute `data-ctc-auto`. So add `data-ctc-auto="true"` to any item you'd like to trigger the click to call process. 
-
-## App Download Widget
-
-### CSS Selectors for overwriting styles
-You can over write our css for the App download widget. The classes vary by layout. Always remember that `:before` & `:after` selectors are your friends. :)
-
-All layouts:
-- `.widgetctc-txt-field` is used on all text fields; just phone number to be exact.
-- `.intl-tel-input` wraps the phone number field
-- `.widgetctc-btn` is used for the submit button
-
-Drop-in:
-- `.widgetsms_form_wrapper` is used to encapsulate the title and form
-- `#widgetsms_form h2` is used for form title
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My App Homepage</title>
+</head>
+<body>
+	<header>
+		<button>Download for iOS</button>
+		<button>Download for Android</button>
+		<div class="userpath-plugin-fa96ed3cz"></div>
+	</header>
+	<section id="main">
+		<ul>
+			<li>It's free</li>
+			<li>It's live streaming</li>
+			<li>It's social</li>
+			<li>It's local</li>
+			<li>It's viral</li>
+			<li>It's gamified</li>
+		</ul>
+	</section>
+	<section id="download">
+		<div class="userpath-plugin-fa96ed3cz"></div>
+		<button>Download for iOS</button>
+		<button>Download for Android</button>
+	</section>
+	<footer>
+		<p>&copy; 2016 My App Homepage</p>
+		<a href="#">about</a>
+		<a href="#">contact</a>
+	</footer>
+	<script type="text/javascript"></script>
+</body>
+</html>```
