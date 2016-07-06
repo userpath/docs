@@ -3,13 +3,17 @@ Our documentation - for the time being. If you have any questions, please don't 
 
 ## Plugin Installation Instructions
 
+These instructions guide you through setup for our most common platforms as well as plain HTML setup. If we're missing a platform, please email us at support@userpath.co. The other thing is that if you want to contribute to these docs, feel free to make a pull request, we will review it. 
+
+Also, remember: You must drop the URL of your tumblr blog into your allowed domains in the widget configuration.
+
 ![On Google Tag Manager](http://userpath.co/new-site/images/img21.png)
 
 ------
 1. Go to the container you'd like to add the plugin to
 2. Click "Add new tag"
 3. Click "Custom HTML Tag"
-4. Paste in your code
+4. Paste in your UserPath code
 5. Check the "Support document.write" option
 6. Click continue
 7. Select "All Pages"
@@ -65,10 +69,16 @@ fdsfs
 4. Click "edit theme"
 5. At the top on the left click on the tiny "Edit HTML" link
 6. Scroll to bottom of code
-7. Paste in your code
+7. Paste in your UserPath code
 
 __REMEMBER:__ You must drop the URL of your tumblr blog into your allowed domains in the widget configuration.
 
+### Using Plain HTML
+
+------
+1. Open your text editor of choice
+2. Paste your UserPath code on every page or if using a template engine, just drop it in the master layout
+3. It should go right before the `</body>` end tag.
 
 ## App Download Plugin Installation
 
