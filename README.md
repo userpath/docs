@@ -99,8 +99,10 @@ __GIF Walkthrough:__ ![Plain HTML](./html-walkthrough.gif)
 If you're trying to use the `drop-in` layout so you can place the app download form where ever you  want on your page, then you must place the snippet provided to you in the HTML, like so:
 
 ```html
-<script></script>
-<div class="userpath-plug-f4a1aedz66"></div>
+<!-- begin UserPath embed code -->
+<script type="text/javascript" src="//alpha.userpath.co/w/get/ability.js"></script>
+<!-- end UserPath embed code -->
+<div class="userpath-plug-f4a1aedz66"></div> <!-- place this where you want the form to show up -->
 ```
 
 If you'd like to place the form in more than one place on the same page, simply copy the line with the div tag and place it multiple times in your HTML where ever you would like it to appear. For instance, say you have a `header`, a `main section`, a `download section` and `footer`. Let's say you want to have your App Download widget in the `header` and the `download section` and this is your HTML:
