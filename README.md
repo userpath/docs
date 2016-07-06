@@ -130,29 +130,20 @@ and finally, drop the `div`s in the appropriate sections (`header` and `download
 </head>
 <body>
 	<header>
-		<button>Download for iOS</button>
-		<button>Download for Android</button>
+		...
 		<div class="userpath-plugin-fa96ed3cz"></div>
 	</header>
 	<section id="main">
 		<ul>
-			<li>It's free</li>
-			<li>It's live streaming</li>
-			<li>It's social</li>
-			<li>It's local</li>
-			<li>It's viral</li>
-			<li>It's gamified</li>
+			...
 		</ul>
 	</section>
 	<section id="download">
 		<div class="userpath-plugin-fa96ed3cz"></div>
-		<button>Download for iOS</button>
-		<button>Download for Android</button>
+		...
 	</section>
 	<footer>
-		<p>&copy; 2016 My App Homepage</p>
-		<a href="#">about</a>
-		<a href="#">contact</a>
+		...
 	</footer>
 	<script type="text/javascript"></script>
 </body>
