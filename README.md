@@ -156,4 +156,5 @@ and finally, drop the `div`s in the appropriate sections (`header` and `download
 	</footer>
 	<script type="text/javascript"></script>
 </body>
-</html>```
+</html>
+```
