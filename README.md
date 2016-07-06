@@ -19,6 +19,24 @@ Also, remember: You must drop the URL of your tumblr blog into your allowed doma
 7. Select "All Pages"
 8. Click "Create Tag"
 
+__GIF Walkthrough:__ ![On Google Tag Manager](./gtm-walkthrough.gif)
+
+### On Tumblr
+
+------
+
+1. Go to the profile icon in the top right
+2. Click on the Tumblr you want to add the UserPath plugin to
+3. Click "edit appearance"
+4. Click "edit theme"
+5. At the top on the left click on the tiny "Edit HTML" link
+6. Scroll to bottom of code
+7. Paste in your UserPath code
+
+__REMEMBER:__ You must drop the URL of your tumblr blog into your allowed domains in the widget configuration.
+
+__GIF Walkthrough:__ ![On Tumblr](./tumblr-walkthrough.gif)
+
 ### On WordPress
 
 ------
@@ -58,20 +76,6 @@ fdsfs
 
 ------
 fdsfs
-
-### On Tumblr
-
-------
-
-1. Go to the profile icon in the top right
-2. Click on the Tumblr you want to add the UserPath plugin to
-3. Click "edit appearance"
-4. Click "edit theme"
-5. At the top on the left click on the tiny "Edit HTML" link
-6. Scroll to bottom of code
-7. Paste in your UserPath code
-
-__REMEMBER:__ You must drop the URL of your tumblr blog into your allowed domains in the widget configuration.
 
 ### Using Plain HTML
 
