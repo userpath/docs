@@ -169,7 +169,7 @@ and finally, drop the `div`s in the appropriate sections (`header` and `download
 <body>
 	<header>
 		...
-		<div class="userpath-plugin-fa96ed3cz"></div>
+		<div class="userpath-plug-f4a1aedz66"></div> <!-- place this where you want the form to show up -->
 	</header>
 	<section id="main">
 		<ul>
@@ -177,7 +177,7 @@ and finally, drop the `div`s in the appropriate sections (`header` and `download
 		</ul>
 	</section>
 	<section id="download">
-		<div class="userpath-plugin-fa96ed3cz"></div>
+		<div class="userpath-plug-f4a1aedz66"></div> <!-- place this where you want the form to show up -->
 		...
 	</section>
 	<footer>
