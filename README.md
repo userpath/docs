@@ -58,12 +58,12 @@ __GIF Walkthrough:__ ![On WordPress](./wordpress-walkthrough.gif)
 3. Then click "Themes" at the top
 4. Click the three dots "..."
 5. Then click "Edit HTML/CSS"
-5. Next scroll in sidebar with the folders/files that end with .liquid until you see "Snippets"
-6. Click that folder name
-7. Click the "Add New Snippet" link
-8. Enter "userpath.liquid" in the popup box
-9. Paste your UserPath code into the textarea
-10.Click the "save" button
+6. Next scroll in sidebar with the folders/files that end with .liquid until you see "Snippets"
+7. Click that folder name
+8. Click the "Add New Snippet" link
+9. Enter "userpath.liquid" in the popup box
+10. Paste your UserPath code into the textarea
+11. Click the "save" button
 
 __GIF Walkthrough:__ ![On Shopify](./shopify-walkthrough.gif)
 
