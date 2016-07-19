@@ -90,12 +90,28 @@ fdsfs
 ### On Weebly
 
 ------
-fdsfs
+1. Sign in to your Weebly account
+2. Click "Edit Site" for the site you'd like to add UserPath too
+3. Drag and drop an "Embed Code" element
+4. Click to set Custom HTML
+5. Paste your UserPath code into the editor
+6. Click out of the editor - it saves automatically
+
+__GIF Walkthrough:__ ![On Weebly](./weebly-walkthrough.gif)
 
 ### On SquareSpace
 
 ------
-fdsfs
+1. Sign in to your SquareSpace account
+2. Start editing the site you want to add UserPath too
+3. In the left bar click "Settings"
+4. Scroll down to the "Website" section and click "Advanced"
+5. Then click "Code Injection"
+6. Scroll down to the text box titled "FOOTER"
+7. Paste your UserPath code into the editor
+8. Click "Save" at the top
+
+__GIF Walkthrough:__ ![On SquareSpace](./squarespace-walkthrough.gif)
 
 ### Using Plain HTML
 
