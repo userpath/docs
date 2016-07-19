@@ -67,26 +67,6 @@ __GIF Walkthrough:__ ![On WordPress](./wordpress-walkthrough.gif)
 
 __GIF Walkthrough:__ ![On Shopify](./shopify-walkthrough.gif)
 
-### On Magento
-
-------
-fdsfs
-
-### On BigCommerce
-
-------
-fdsfs
-
-### On 3DCart
-
-------
-fdsfs
-
-### On PrestaShop
-
-------
-fdsfs
-
 ### On Weebly
 
 ------
@@ -121,6 +101,26 @@ __GIF Walkthrough:__ ![On SquareSpace](./squarespace-walkthrough.gif)
 3. It should go right before the `</body>` end tag.
 
 __GIF Walkthrough:__ ![Plain HTML](./html-walkthrough.gif)
+
+### On Magento
+
+------
+Coming soonish... Want it sooner? Email us!
+
+### On BigCommerce
+
+------
+Coming soonish... Want it sooner? Email us!
+
+### On 3DCart
+
+------
+Coming soonish... Want it sooner? Email us!
+
+### On PrestaShop
+
+------
+Coming soonish... Want it sooner? Email us!
 
 ## App Download Plugin Installation
 
