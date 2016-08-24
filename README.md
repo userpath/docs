@@ -7,6 +7,14 @@ These instructions guide you through setup for our most common platforms as well
 
 Also, remember: You must drop the URL of your tumblr blog into your allowed domains in the widget configuration.
 
+* [Google Tag Manager Instructions](#on-google-tag-manager)
+* [Tumblr Instructions](#on-tumblr)
+* [WordPress Instructions](#on-wordpress)
+* [Plain HTML Instructions](#using-plain-html)
+* [Squarespace Instructions](#on-squarespace)
+* [Weebly Instructions](#on-weebly)
+* [Shopify Instructions](#on-shopify)
+
 ### On Google Tag Manager
 
 ------
